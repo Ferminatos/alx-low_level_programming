@@ -10,13 +10,6 @@
 int main(void)
 
 {
-	/*
-	char Character;
-	int Intger_number;
-	long long_number;
-	long Long_number2;
-	float Flotting_number;
-	*/
 	printf("Size of a char: %lu byte(s)\n", sizeof(char));
 	printf("Size of an int: %lu byte(s)\n", sizeof(int));
 	printf("Size of a long int: %lu byte(s)\n", sizeof(long));
