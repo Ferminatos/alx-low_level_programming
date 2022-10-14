@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * main - Entry point
@@ -16,10 +15,13 @@ int main(void)
 	for (lower = 'a'; lower <= 'z'; lower++)
 	{
 		putchar(lower);
-		upper = toupper(lower);
-		putchar(upper);
 	}
 
+	for (upper = 'A'; upper <= 'Z'; upper++)
+	{
+		putchar(upper);
+	}
+	
 	putchar('\n');
 
 	return (0);
