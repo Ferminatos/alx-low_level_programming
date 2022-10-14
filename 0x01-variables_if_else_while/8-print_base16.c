@@ -8,11 +8,10 @@
 
 int main(void)
 {
-	int num;
 	char c;
 
-	for (num = 0; num < 10; num++)
-		putchar("%i", num);
+	for (c = 0; c < 10; c++)
+		putchar(c);
 
 	for (c = 'a'; c <= 'f'; c++)
 		putchar(c);
