@@ -20,7 +20,7 @@ void jack_bauer(void)
 		_putchar('\n');
 		d++;
 
-		if (d > 10)
+		if (d > 9)
 		{
 			d = 0;
 			c++;
