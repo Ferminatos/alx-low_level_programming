@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	char _putchar[] = "_putchar";
+	char p[] = "_putchar";
 	int i = 0;
 
-	while (_putchar[i] != '\0')
+	while (p[i] != '\0')
 	{
-		_putchar(_putchar[i]);
+		_putchar(p[i]);
 		i++;
 	}
 
