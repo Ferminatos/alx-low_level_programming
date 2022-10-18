@@ -12,19 +12,19 @@ void jack_bauer(void)
 
 	for (hr = 0; hr <= 23; hr++)
 	{
+
+		if (hr < 10)
+		{
+			_putchar(hr);
+		}
+
+		else
+			_putchar(hr);
+
+		_putchar(':');
+
 		for (mn = 0; mn <= 59; mn++)
 		{
-			if (hr < 10)
-			{
-				_putchar(hr);
-				_putchar(hr);
-			}
-
-			else
-				_putchar(hr);
-
-			_putchar(':');
-
 			if (mn < 10)
 			{
 				_putchar(mn);
