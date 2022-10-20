@@ -16,9 +16,9 @@ int largest_number(int a, int b, int c)
 	pb = &b;
 	pc = &c;
 
-	if (*pa > *pb && *pa > *pc)
+	if (*pa >= *pb && *pa >= *pc)
 		largest = *pa;
-	else if (*pb > *pa && *pb > *pc)
+	else if (*pb >= *pa && *pb >= *pc)
 		largest = *pb;
 	else
 		largest = *pc;
