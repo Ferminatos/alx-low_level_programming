@@ -19,6 +19,7 @@ void print_most_numbers(void)
 				continue;
 			default:
 				_putchar(c);
+				break;
 		}
 	}
 	_putchar('\n');
