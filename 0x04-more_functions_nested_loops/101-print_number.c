@@ -8,42 +8,31 @@
 
 void print_number(int n)
 {
-	long m;
-	int c;
-	long num;
+	int copy, nth, size = 1, ones = n % 10;
 
-	num = n;
+	n /= 10;
+	copy = n;
 
-	if (num < 0)
+	if (ones < 0)
 	{
-		num *= -1;
+		ones *= -1, copy *= -1, n *= -1;
 		_putchar('-');
 	}
 
-	m = 1;
-	c = 1;
-
-	while (c)
+	if (copy > 0)
 	{
-		if (num / (m * 10) > 0)
-			m *= 10;
-
-		else
-			c = 0;
-	}
-
-	while (num >= 0)
-	{
-		if (m == 1)
+		while (copy / 10 != 0)
 		{
-			_putchar(num % 10 + '0');
-			num = -1;
+			copy /= 10, size *= 10;
 		}
 
-		else
+		while (size > 0)
 		{
-			_putchar((num / m % 10) + '0');
-			m /= 10;
+			nth = n / size;
+			_putchar('0' + nth);
+			n -= nth * size;
+			size /= 10;
 		}
 	}
+	_putchar('0' + ones);
 }
