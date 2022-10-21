@@ -13,9 +13,9 @@ void print_most_numbers(void)
 	{
 		switch (c)
 		{
-			case 2:
+			case '2':
 				continue;
-			case 4:
+			case '4':
 				continue;
 			default:
 				_putchar(c);
