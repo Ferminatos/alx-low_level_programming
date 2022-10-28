@@ -14,8 +14,11 @@ void print_buffer(char *b, int size)
 	if (size < 0)
 		printf("\n");
 
-	for (i = 0; b[i] != '\0' && i < size; i++)
+	else
 	{
-	}
 
+		for (i = 0; b[i] != '\0' && i < size; i++)
+		{
+		}
+	}
 }
