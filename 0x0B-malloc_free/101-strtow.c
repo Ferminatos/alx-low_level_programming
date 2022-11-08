@@ -43,7 +43,7 @@ int word_counter(char *str)
 char **strtow(char *str)
 {
 	char **strDup;
-	unsigned int i, n, m, words;
+	int i, n, m, words;
 
 	if (str == NULL || str[0] == 0)
 		return (NULL);
@@ -61,7 +61,7 @@ char **strtow(char *str)
 			n = 0;
 			while (str[n] != ' ')
 				n++;
-			strDup[i] = malloc(sizeof(char) * (n + 1));
+			strDup[i] = malloc(sizeof(char) * (n - i + 2));
 			if (strDup[i] == NULL)
 			{
 				while (--i >= 0)
