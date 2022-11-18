@@ -19,10 +19,18 @@ void _printfloat(va_list list);
 
 void _printint(va_list list);
 
+/**
+ * struct checker - Struct operators
+ *
+ * @type: Char
+ * @f: The function associated
+ */
+
 typedef struct checker
 {
 	char *type;
 	void (*f)();
 
 } checker;
+
 #endif
