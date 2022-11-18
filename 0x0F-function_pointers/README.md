@@ -1,1 +1,1 @@
-# The folder contains exercise files that illustrate Structures, typedef in c
+# The folder contains exercise files that illustrate function pointers in c
