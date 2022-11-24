@@ -10,13 +10,19 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t i;
+	const list_t *current;
+	size_t c;
 
-	for (i = 0; h; i++)
+	c = 0;
+
+	current = h;
+
+	while (current != NULL)
 	{
-		printf("[%d] %s\n", h->len, h->str);
-		h = h->next;
+		printf("[%d] %s\n", current->len, current->str);
+		current = current->next;
+		c++;
 	}
 
-	return (i);
+	return (c);
 }
