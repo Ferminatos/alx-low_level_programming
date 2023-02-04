@@ -1,9 +1,9 @@
 #ifndef HASH_TABLES_H
 #define HASH_TABLES_H
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+
 /**
  * struct hash_node_s - Node of a hash table
  *
@@ -12,6 +12,7 @@
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the List
  */
+
 typedef struct hash_node_s
 {
 	char *key;
@@ -46,11 +47,11 @@ typedef struct hash_table_s
  */
 typedef struct shash_node_s
 {
-     char *key;
-     char *value;
-     struct shash_node_s *next;
-     struct shash_node_s *sprev;
-     struct shash_node_s *snext;
+	char *key;
+	char *value;
+	struct shash_node_s *next;
+	struct shash_node_s *sprev;
+	struct shash_node_s *snext;
 } shash_node_t;
 
 /**
@@ -63,14 +64,14 @@ typedef struct shash_node_s
  * @shead: A pointer to the first element of the sorted linked list
  * @stail: A pointer to the last element of the sorted linked list
  */
+
 typedef struct shash_table_s
 {
-     unsigned long int size;
-     shash_node_t **array;
-     shash_node_t *shead;
-     shash_node_t *stail;
+	unsigned long int size;
+	shash_node_t **array;
+	shash_node_t *shead;
+	shash_node_t *stail;
 } shash_table_t;
-
 
 hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
